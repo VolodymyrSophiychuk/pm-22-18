@@ -1,0 +1,40 @@
+.header {
+  width: calc(100% - 25rem);
+  height: 5.5rem;
+  background-color: #0288d1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.header-title-container {
+  float: left;
+  height: 5.5rem;
+  width: auto;
+}
+
+.img-menu {
+  float: left;
+  padding-top: .8rem;
+  padding-left: 1rem;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+}
+
+.img-logo {
+  float: right;
+  padding-top: 1.25rem;
+  padding-right: 2.5rem;
+  width: 11.5rem;
+  height: 3rem;
+  object-fit: cover;
+}
+
+.header-title {
+  padding-top: 1.5rem;
+  padding-left: 5.5rem;
+  font-size: 1.8rem;
+}
