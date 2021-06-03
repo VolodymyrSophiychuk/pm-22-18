@@ -47,7 +47,7 @@
             $.ajax({
                 async: true,
                 type: "Get",
-                url: "data.json",
+                url: "src/data/data.json",
                 dataType: "json",
                 success: function(data) {
                     json = data.text;
@@ -72,7 +72,7 @@
                 }
             }
 
-            xhr.open('get', 'data.json', true);
+            xhr.open('get', 'src/data/data.json', true);
             xhr.send();
         }
 

@@ -122,8 +122,8 @@ body {
 
 .img-menu {
     float: left;
-    padding-top: .8rem;
-    padding-left: 1rem;
+    margin-top: .8rem;
+    margin-right: 1rem;
     display: block;
     width: 4rem;
     height: 4rem;
@@ -133,8 +133,8 @@ body {
 
 .img-logo {
     float: right;
-    padding-top: 1.25rem;
-    padding-right: 2.5rem;
+    margin-top: 1.2rem;
+    margin-right: 2rem;
     width: 11.5rem;
     height: 3rem;
     -o-object-fit: cover;
@@ -261,7 +261,8 @@ body {
     height: 1.5rem;
     -o-object-fit: cover;
     object-fit: cover;
-    padding-left: .5rem;
+    margin-left: 1rem;
+    padding-bottom: .5rem;
 }
 
 .main-announcement-content-right {
@@ -367,8 +368,8 @@ body {
 }
 
 .main-messages-content-active {
-    top: -4.5rem;
-    left: 1.8rem;
+    top: -3.2rem;
+    left: 1.7rem;
     position: relative;
     background-color: #cddc39;
     border: .1rem solid #cddc39;
@@ -378,8 +379,8 @@ body {
 }
 
 .main-messages-content-non-active {
-    top: -4.5rem;
-    left: 1.8rem;
+    top: -3.2rem;
+    left: 1.7rem;
     position: relative;
     background-color: #f4511e;
     border: .1rem solid #f4511e;
@@ -396,7 +397,6 @@ body {
 
 .main-messages-content-textL1 {
     padding-left: 1rem;
-    padding-top: .5rem;
     font-size: 1.4rem;
     color: #212121;
 }
@@ -565,6 +565,7 @@ body {
 
 .main-calendar-table-ch {
     position: absolute;
+    margin-top: .3rem;
     margin-left: .7rem;
     width: 2rem;
     height: 2rem;
@@ -574,6 +575,7 @@ body {
 
 .main-calendar-table-ch-today {
     position: absolute;
+    margin-top: .3rem;
     margin-left: .7rem;
     width: 2rem;
     height: 2rem;
@@ -595,12 +597,12 @@ body {
     text-align: center;
     padding: .5rem;
     float: left;
-    height: calc((21.5rem / 6) - 1rem);
-    width: calc((32rem / 7) - 1rem);
+    height: calc((26.5rem / 6) - 1rem);
+    width: calc((39rem / 7) - 1rem);
 }
 
 .main-calendar-table-item:nth-child(6n+7) {
-    width: calc((32rem / 7) - 1.1rem);
+    width: calc((39rem / 7) - 1.1rem);
 }
 
 /**/
@@ -702,7 +704,7 @@ body {
 }
 
 .main-forum-block-subtitle {
-    padding: 0 0 1rem 1.5rem;
+    padding: 1rem 0 1rem 1.5rem;
     height: 2rem;
     width: auto;
     font-size: 1rem;
