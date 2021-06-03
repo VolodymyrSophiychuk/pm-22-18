@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.min.css">
     
@@ -15,35 +17,79 @@
 </head>
 <body>
     <div class="page">
-        <aside class="sidebar">
-            <div class="sidebar_header">
-                <img class="img-ava" src="assets/images/ava.jpg" alt="">
-                <div class="sidebar_profile_name">Alex Shaw</div>
-                <div>
-                    <img class="img-pos" src="assets/images/gps.jpg" alt="">
-                    <div class="sidebar_profile_from">Ho Shi Minh City, Vietnam</div>
-                </div>
-                <div class="sidebar_profile_spec">Student</div>
+        <!--<aside class="sidebar">
+    <div class="sidebar_header">
+        <img class="img-ava" src="assets/images/ava.jpg" alt="">
+        <div class="sidebar_profile_name">Alex Shaw</div>
+        <div>
+            <img class="img-pos" src="assets/images/gps.jpg" alt="">
+            <div class="sidebar_profile_from">Ho Shi Minh City, Vietnam</div>
+        </div>
+        <div class="sidebar_profile_spec">Student</div>
+    </div>
+    <div class="sidebar_content">
+        <img src="assets/images/home.jpg" alt="">
+        <div class="sidebar_content_template">Dashboard</div>
+        <img src="assets/images/calendar.jpg" alt="">
+        <div class="sidebar_content_template">Calendar</div>
+        <img src="assets/images/announcements.jpg" alt="">
+        <div class="sidebar_content_template">Announcement</div>
+        <img src="assets/images/courses.jpg" alt="">
+        <div class="sidebar_content_template">Courses</div>
+        <img src="assets/images/messages.jpg" alt="">
+        <div class="sidebar_content_template">Messages</div>
+        <img src="assets/images/forum.jpg" alt="">
+        <div class="sidebar_content_template">Forum</div>
+    </div>
+    <div>
+        <img class="sidebar-footer-img-settings" src="assets/images/settings.jpg" alt="">
+        <img class="sidebar-footer-img-logout" src="assets/images/logout.jpg" alt="">
+    </div>
+</aside>-->
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+        </head>
+        <body>
+        <div class="container-fluid">
+            <div class="row min-vh-100 flex-column flex-md-row">
+                <aside class="col-12 col-md-3 col-xl-2 p-0 flex-shrink-1">
+                    <nav class="navbar navbar-expand-md flex-md-column flex-row align-items-center py-2 text-center sticky-top">
+                        <div class="text-center p-3">
+                            <img src="assets/images/ava.jpg" alt="" class="img-fluid my-4  p-1 d-none d-md-block">
+                            <div class="navbar-brand mx-0 font-weight-bold text-nowrap">Alex Shaw</div>
+                            <div class="navbar-brand mx-0 font-weight-bold text-nowrap">Ho Shi Minh City, Vietnam</div>
+                            <div class="navbar-brand mx-0 font-weight-bold text-nowrap">Student</div>
+                        </div>
+                        <div class="collapse navbar-collapse order-last">
+                            <ul class="navbar-nav  flex-column w-100 justify-content-center">
+                                <li class="nav-item">
+                                    <div>Dashboard</div>
+                                </li>
+                                <li class="nav-item">
+                                    <div>Calendar</div>
+                                </li>
+                                <li class="nav-item">
+                                    <div>Announcement</div>
+                                </li>
+                                <li class="nav-item">
+                                    <div>Courses</div>
+                                </li>
+                                <li class="nav-item">
+                                    <div>Messages</div>
+                                </li>
+                                <li class="nav-item">
+                                    <div>Forum</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </aside>
             </div>
-            <div class="sidebar_content">
-                <img src="assets/images/home.jpg" alt="">
-                <div class="sidebar_content_template">Dashboard</div>
-                <img src="assets/images/calendar.jpg" alt="">
-                <div class="sidebar_content_template">Calendar</div>
-                <img src="assets/images/announcements.jpg" alt="">
-                <div class="sidebar_content_template">Announcement</div>
-                <img src="assets/images/courses.jpg" alt="">
-                <div class="sidebar_content_template">Courses</div>
-                <img src="assets/images/messages.jpg" alt="">
-                <div class="sidebar_content_template">Messages</div>
-                <img src="assets/images/forum.jpg" alt="">
-                <div class="sidebar_content_template">Forum</div>
-            </div>
-            <div>
-                <img class="sidebar-footer-img-settings" src="assets/images/settings.jpg" alt="">
-                <img class="sidebar-footer-img-logout" src="assets/images/logout.jpg" alt="">
-            </div>
-        </aside>
+        </div>
+        </body>
+        </html>
         <header class="header">
             <div class="header-title-container">
                 <img class="img-menu" src="assets/images/menu.jpg" alt="">
@@ -71,15 +117,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-announcement-content">
+                <div class="main-announcement-content" id="one">
                     <div class="main-announcement-content-left">
                         <div class="main-announcement-content-separator-blue"></div>
                         <div class="main-announcement-content-watched">12459</div>
                         <img class="img-sign" src="assets/images/eye.jpg" alt="">
                     </div>
                     <div class="main-announcement-content-right">
-                        <div class="main-announcement-content-top">MERRY CHRISTMAS EVERYONE AND DAYS OFF SCHEDULE</div>
-                        <div class="main-announcement-content-bottom">Thank you everyone for all of your supports. Please notise days off schedule...</div>
+                        <div class="main-announcement-content-top" id="top">MERRY CHRISTMAS EVERYONE AND DAYS OFF SCHEDULE</div>
+                        <div class="main-announcement-content-bottom" id="bottom">Thank you everyone for all of your supports. Please notise days off schedule...</div>
                     </div>
                 </div>
                 <div class="main-announcement-content">
@@ -166,10 +212,7 @@
                 <div class="main-courses-header">
                     <div class="main-courses-header-title">Courses</div>
                     <div class="main-courses-header-subtitle">Your Current Courses And Process</div>
-                    <div class="main-courses-header-add-button">
-                        <div class="main-courses-header-add-button-v"></div>
-                        <div class="main-courses-header-add-button-h"></div>
-                    </div>
+                    <button class="main-courses-header-add-button" id="crsbut">+</button>
                 </div>
                 <div class="main-courses-data-cell">
                     <div class="main-courses-data">
@@ -336,5 +379,68 @@
         </main>    </div>
 
     <script src="assets/js/app.js"></script>
+    <script>
+        $(document).ready(function () {
+            let btn = $('.main-courses-header-add-button');
+            btn.click(function () {
+                let courses = $('.main-courses');
+                let datacell = $('<div class="main-courses-data-cell"></div>');
+                let data = $('<div class="main-courses-data"></div>');
+                let dataleft = $('<div class="main-courses-data-cell-left"></div>');
+                let percents = $('<div class="main-courses-data-percents">100%</div>');
+                let l1 = $('<div class="main-courses-data-chart-L1"></div>');
+                let dataright = $('<div class="main-courses-data-cell-right"></div>');
+                let title = $('<div class="main-courses-data-title">Test</div>');
+                let subtitle = $('<div class="main-courses-data-subtitle">Test</div>');
+
+                courses.append(datacell);
+                datacell.append(data);
+                data.append(dataleft);
+                data.append(dataright);
+                dataleft.append(percents);
+                dataleft.append(l1);
+                dataright.append(title);
+                dataright.append(subtitle);
+            });
+        });
+    </script>
+    <script>
+        var data = function() {
+            var json = null;
+            $.ajax({
+                async: true,
+                type: "Get",
+                url: "data.json",
+                dataType: "json",
+                success: function(data) {
+                    json = data.text;
+                },
+                error: function(){
+                    alert("json not found");
+                }
+            });
+            return json;
+        }();
+        function loadData() {
+            const xhr = new XMLHttpRequest();
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4) {
+                    if (xhr.status == 200) {
+                        alert(xhr.responseText);
+                    }
+                    if (xhr.status == 404) {
+                        alert('Error');
+                    }
+                }
+            }
+
+            xhr.open('get', 'data.json', true);
+            xhr.send();
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </body>
 </html>

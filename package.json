@@ -27,5 +27,8 @@
     "panini": "^1.7.1",
     "webpack": "^5.37.1",
     "webpack-stream": "^6.1.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.1"
   }
 }

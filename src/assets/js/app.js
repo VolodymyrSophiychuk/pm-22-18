@@ -11,7 +11,6 @@ but.addEventListener('click', event => {
     calendarElement[15].appendChild(tN);
 
     let date = new Date().getDate();
-    date--;
 
     for (let trigger = 0; trigger < 42; trigger++) {
         tN = document.createTextNode(calendarElement[trigger].textContent);

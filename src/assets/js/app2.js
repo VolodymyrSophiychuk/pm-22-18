@@ -2,7 +2,6 @@ var messageElement = document.querySelector('div.main-messages');
 var but = document.querySelector('[data-mod]');
 
 but.addEventListener('click', event => {
-    console.log('aaa');
     let content = document.createElement("div");
     let content_left = document.createElement("div");
     let content_right = document.createElement("div");
